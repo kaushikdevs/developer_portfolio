@@ -1,0 +1,40 @@
+.curveWrap {
+  height: 300px;
+}
+.curveWrap .curve {
+  stroke-linecap: round;
+  stroke-opacity: 0.7;
+}
+.curveWrap .curve path {
+  transform-origin: center;
+}
+.curveWrap .curve path:nth-child(6n + 1) {
+  stroke: #3379b7;
+  z-index: 100;
+}
+.curveWrap .curve path:nth-child(6n + 4) {
+  stroke: #78b5e8;
+}
+.curveWrap .curve path:nth-child(1) {
+  stroke-width: 8;
+  animation: curve 35s linear 1.4s infinite;
+}
+.curveWrap .curve path:nth-child(4) {
+  stroke-width: 4;
+  animation: curve 35s linear 5.6s infinite;
+}
+
+/* @keyframes curve {
+    0% {
+      transform: rotateX(0deg) skewY(0deg);
+      stroke-opacity: 0.7;
+    }
+    50% {
+      transform: rotateX(360deg) skewY(8deg);
+      stroke-opacity: 1;
+    }
+    100% {
+      transform: rotateX(0deg) skewY(0deg);
+      stroke-opacity: 0.7;
+    }
+  } */
